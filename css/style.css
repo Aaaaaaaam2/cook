@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+/* 폰트변경은 여기서 한번에 했음 */
+#logo, h1, h2, h3, h4, h5, .gugi-font {
+    font-family: "Gugi", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header { /* 배경이미지 지정은 css해서 하면 편함 */
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8),
+    rgba(0,0,0,0.2)), url(../images/main-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#sns-links {
+    background-image: url('../images/sns-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* 배너배경처럼 해놓은게 유동적으로 막 보인다 신기하다*/
+
+}
+
+/* 주소 부분만 */
+@media (min-width:768px) and (max-width:1024px) {
+  .text {
+    font-size: 14px;
+  }
+}
+
+.card-hover:hover {
+  background-color: #ffc107226;
+  cursor: pointer;
+}
+
+/* 네비게이션 영역 */
+.nav-link:hover,
+.nav-link.active {
+  color: #ffc107 !important;
+}
+
+#news { 
+  background-image: linear-gradient(to top, rgba(0,0,0,0.8), /* 배경 어둡게 하는 법 */
+  rgba(0,0,0,0.2)), url(../images/news-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
